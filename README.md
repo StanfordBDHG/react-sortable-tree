@@ -1,18 +1,8 @@
-
-
-# Note: Check Issues for more info
-
 <div align="center">
   <img src="https://cloud.githubusercontent.com/assets/4413963/18860410/26f64de8-84b8-11e6-9284-350308eed30a.png"/>
 </div>
 
-# React Sortable Tree
-
-![NPM version](https://img.shields.io/npm/v/@nosferatu500/react-sortable-tree.svg?style=flat)
-![NPM license](https://img.shields.io/npm/l/@nosferatu500/react-sortable-tree.svg?style=flat)
-[![NPM total downloads](https://img.shields.io/npm/dt/@nosferatu500/react-sortable-tree.svg?style=flat)](https://npmcharts.com/compare/@nosferatu500/react-sortable-tree?minimal=true)
-[![NPM monthly downloads](https://img.shields.io/npm/dm/@nosferatu500/react-sortable-tree.svg?style=flat)](https://npmcharts.com/compare/@nosferatu500/react-sortable-tree?minimal=true)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+# React Sortable Tree - @StanfordBDHG Fork
 
 > A React component for Drag-and-drop sortable representation of hierarchical data. Checkout the [Storybook](https://frontend-collective.github.io/react-sortable-tree/) for a demonstration of some basic and advanced features.
 
@@ -37,10 +27,10 @@ Install `react-sortable-tree` using npm.
 
 ```sh
 # NPM
-npm install @nosferatu500/react-sortable-tree --save
+npm install @stanfordbdhg/react-sortable-tree --save
 
 # YARN
-yarn add @nosferatu500/react-sortable-tree
+yarn add @stanfordbdhg/react-sortable-tree
 ```
 
 ES6 and CommonJS builds are available with each distribution.
@@ -48,28 +38,28 @@ For example:
 
 ```js
 // This only needs to be done once; probably during your application's bootstrapping process.
-import '@nosferatu500/react-sortable-tree/style.css';
+import '@stanfordbdhg/react-sortable-tree/style.css';
 
 // You can import the default tree with dnd context
-import SortableTree from '@nosferatu500/react-sortable-tree';
+import SortableTree from '@stanfordbdhg/react-sortable-tree';
 
 // Or you can import the tree without the dnd context as a named export. eg
-import { SortableTreeWithoutDndContext as SortableTree } from '@nosferatu500/react-sortable-tree';
+import { SortableTreeWithoutDndContext as SortableTree } from '@stanfordbdhg/react-sortable-tree';
 
 // Importing from cjs (default)
-import SortableTree from '@nosferatu500/react-sortable-tree/dist/index.cjs.js';
-import SortableTree from '@nosferatu500/react-sortable-tree';
+import SortableTree from '@stanfordbdhg/react-sortable-tree/dist/index.cjs.js';
+import SortableTree from '@stanfordbdhg/react-sortable-tree';
 
 // Importing from esm
-import SortableTree from '@nosferatu500/react-sortable-tree/dist/index.esm.js';
+import SortableTree from '@stanfordbdhg/react-sortable-tree/dist/index.esm.js';
 ```
 
 ## Usage
 
 ```jsx
 import React, { Component } from 'react';
-import SortableTree from '@nosferatu500/react-sortable-tree';
-import '@nosferatu500/react-sortable-tree/style.css'; // This only needs to be imported once in your app
+import SortableTree from '@stanfordbdhg/react-sortable-tree';
+import '@stanfordbdhg/react-sortable-tree/style.css'; // This only needs to be imported once in your app
 
 export default class Tree extends Component {
   constructor(props) {
@@ -164,9 +154,7 @@ Using the `theme` prop along with an imported theme module, you can easily overr
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                                            **File Explorer**                                                                             |                                                                             **Full Node Drag**                                                                             |                                                   **Minimalistic theme inspired from MATERIAL UI**                                                   |
 |                                                                 @nosferatu500/theme-file-explorer                                                                  |                                                                  react-sortable-tree-theme-full-node-drag                                                                  |                                                          react-sortable-tree-theme-minimal                                                           |
-| [Github](https://github.com/nosferatu500/theme-file-explorer) \| [NPM](https://www.npmjs.com/package/@nosferatu500/theme-file-explorer) | [Github](https://github.com/frontend-collective/react-sortable-tree-theme-full-node-drag) \| [NPM](https://www.npmjs.com/package/react-sortable-tree-theme-full-node-drag) | [Github](https://github.com/lifejuggler/react-sortable-tree-theme-minimal) \| [NPM](https://www.npmjs.com/package/react-sortable-tree-theme-minimal) |
-
-**Help Wanted** - As the themes feature has just been enabled, there are very few (only _two_ at the time of this writing) theme modules available. If you've customized the appearance of your tree to be especially cool or easy to use, I would be happy to feature it in this readme with a link to the Github repo and NPM page if you convert it to a theme. You can use my [file explorer theme repo](https://github.com/nosferatu500/theme-file-explorer) as a template to plug in your own stuff.
+| [Github](https://github.com/nosferatu500/theme-file-explorer) \| [NPM](https://www.npmjs.com/package/@stanfordbdhg/theme-file-explorer) | [Github](https://github.com/frontend-collective/react-sortable-tree-theme-full-node-drag) \| [NPM](https://www.npmjs.com/package/react-sortable-tree-theme-full-node-drag) | [Github](https://github.com/lifejuggler/react-sortable-tree-theme-minimal) \| [NPM](https://www.npmjs.com/package/react-sortable-tree-theme-minimal) |
 
 ## Browser Compatibility
 
@@ -191,41 +179,23 @@ react-dnd only allows for one DragDropContext at a time (see: https://github.com
 
 ```js
 // before
-import SortableTree from '@nosferatu500/react-sortable-tree';
+import SortableTree from '@stanfordbdhg/react-sortable-tree';
 
 // after
-import { SortableTreeWithoutDndContext as SortableTree } from '@nosferatu500/react-sortable-tree';
+import { SortableTreeWithoutDndContext as SortableTree } from '@stanfordbdhg/react-sortable-tree';
 ```
+
+## Credits
+
+This project was forked from [https://github.com/nosferatu500/react-sortable-tree](https://github.com/nosferatu500/react-sortable-tree) which is a fork of [https://github.com/frontend-collective/react-sortable-tree](https://github.com/frontend-collective/react-sortable-tree).
 
 ## Contributing
 
-Please read the [Code of Conduct](CODE_OF_CONDUCT.md). I actively welcome pull requests :)
-
-After cloning the repository and running `yarn install` inside, you can use the following commands to develop and build the project.
-
-```sh
-# Starts a webpack dev server that hosts a demo page with the component.
-# It uses react-hot-loader so changes are reflected on save.
-yarn start
-
-# Start the storybook, which has several different examples to play with.
-# Also hot-reloaded.
-yarn run storybook
-
-# Runs the library tests
-yarn test
-
-# Lints the code with eslint
-yarn run lint
-
-# Lints and builds the code, placing the result in the dist directory.
-# This build is necessary to reflect changes if you're
-#  `npm link`-ed to this repository from another local project.
-yarn run build
-```
-
-Pull requests are welcome!
+Contributions to this project are welcome. Please make sure to read the [contribution guidelines](https://github.com/StanfordSpezi/.github/blob/main/CONTRIBUTING.md) and the [contributor covenant code of conduct](https://github.com/StanfordSpezi/.github/blob/main/CODE_OF_CONDUCT.md) first.
 
 ## License
 
-MIT
+This project is licensed under the MIT License. See [Licenses](https://github.com/StanfordSpezi/learnspezi/tree/main/LICENSES) for more information.
+
+![Spezi Footer](https://raw.githubusercontent.com/StanfordSpezi/.github/main/assets/FooterLight.png#gh-light-mode-only)
+![Spezi Footer](https://raw.githubusercontent.com/StanfordSpezi/.github/main/assets/FooterDark.png#gh-dark-mode-only)
