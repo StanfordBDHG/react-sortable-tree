@@ -153,7 +153,7 @@ Using the `theme` prop along with an imported theme module, you can easily overr
 |                       ![File Explorer Theme](https://user-images.githubusercontent.com/4413963/32144502-1df1ae08-bcfd-11e7-8f63-8b836dace1a4.png)                        |           <img alt="Full Node Drag Theme" src="https://user-images.githubusercontent.com/4413963/33521792-61dc2c50-d81f-11e7-8ab1-359661a11ca4.png" width="300">           |  <img alt="MINIMAL THEME" src="https://github.com/lifejuggler/react-sortable-tree-theme-minimal/blob/master/example-resource/main.png" width="300">  |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                                            **File Explorer**                                                                             |                                                                             **Full Node Drag**                                                                             |                                                   **Minimalistic theme inspired from MATERIAL UI**                                                   |
-|                                                                 @stanfordbdhg/theme-file-explorer                                                                  |                                                                  react-sortable-tree-theme-full-node-drag                                                                  |                                                          react-sortable-tree-theme-minimal                                                           |
+|                                                                 @nosferatu500/theme-file-explorer                                                                  |                                                                  react-sortable-tree-theme-full-node-drag                                                                  |                                                          react-sortable-tree-theme-minimal                                                           |
 | [Github](https://github.com/nosferatu500/theme-file-explorer) \| [NPM](https://www.npmjs.com/package/@stanfordbdhg/theme-file-explorer) | [Github](https://github.com/frontend-collective/react-sortable-tree-theme-full-node-drag) \| [NPM](https://www.npmjs.com/package/react-sortable-tree-theme-full-node-drag) | [Github](https://github.com/lifejuggler/react-sortable-tree-theme-minimal) \| [NPM](https://www.npmjs.com/package/react-sortable-tree-theme-minimal) |
 
 ## Browser Compatibility
@@ -185,35 +185,17 @@ import SortableTree from '@stanfordbdhg/react-sortable-tree';
 import { SortableTreeWithoutDndContext as SortableTree } from '@stanfordbdhg/react-sortable-tree';
 ```
 
+## Credits
+
+This project was forked from [https://github.com/nosferatu500/react-sortable-tree](https://github.com/nosferatu500/react-sortable-tree) which is a fork of [https://github.com/frontend-collective/react-sortable-tree](https://github.com/frontend-collective/react-sortable-tree).
+
 ## Contributing
 
-Please read the [Code of Conduct](CODE_OF_CONDUCT.md). I actively welcome pull requests :)
-
-After cloning the repository and running `yarn install` inside, you can use the following commands to develop and build the project.
-
-```sh
-# Starts a webpack dev server that hosts a demo page with the component.
-# It uses react-hot-loader so changes are reflected on save.
-yarn start
-
-# Start the storybook, which has several different examples to play with.
-# Also hot-reloaded.
-yarn run storybook
-
-# Runs the library tests
-yarn test
-
-# Lints the code with eslint
-yarn run lint
-
-# Lints and builds the code, placing the result in the dist directory.
-# This build is necessary to reflect changes if you're
-#  `npm link`-ed to this repository from another local project.
-yarn run build
-```
-
-Pull requests are welcome!
+Contributions to this project are welcome. Please make sure to read the [contribution guidelines](https://github.com/StanfordSpezi/.github/blob/main/CONTRIBUTING.md) and the [contributor covenant code of conduct](https://github.com/StanfordSpezi/.github/blob/main/CODE_OF_CONDUCT.md) first.
 
 ## License
 
-MIT
+This project is licensed under the MIT License. See [Licenses](https://github.com/StanfordSpezi/learnspezi/tree/main/LICENSES) for more information.
+
+![Spezi Footer](https://raw.githubusercontent.com/StanfordSpezi/.github/main/assets/FooterLight.png#gh-light-mode-only)
+![Spezi Footer](https://raw.githubusercontent.com/StanfordSpezi/.github/main/assets/FooterDark.png#gh-dark-mode-only)
