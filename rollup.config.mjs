@@ -21,7 +21,11 @@ export default [{
       sourcemap: true
     }
   ],
-  external: [/node_modules/],
+  external: [
+    'style-inject',
+    ...Object.keys(packageJson.dependencies || {}),
+    ...Object.keys(packageJson.peerDependencies || {}),
+  ],
   plugins: [
     resolve(),
     commonjs(),
