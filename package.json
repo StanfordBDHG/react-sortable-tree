@@ -1,6 +1,6 @@
 {
   "name": "@stanfordbdhg/react-sortable-tree",
-  "version": "5.0.0-alpha.7",
+  "version": "5.0.0",
   "description": "Drag-and-drop sortable component for nested data and hierarchies",
   "homepage": "https://github.com/stanfordbdhg/react-sortable-tree",
   "main": "lib/index.esm.js",

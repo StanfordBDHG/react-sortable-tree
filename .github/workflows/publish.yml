@@ -1,0 +1,19 @@
+name: Publish to NPM
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  publish:
+    uses: StanfordBDHG/.github/.github/workflows/npm-publish-package.yml@main
+    with:
+      nodeVersion: '20'
+      packageVersion: ${{ github.ref_name }}
+      packageTag: 'latest'
+      workingDirectory: '.'
+      cacheDependencyPath: 'package-lock.json'
+      workspaces: false
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }} 
