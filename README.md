@@ -27,10 +27,10 @@ Install `react-sortable-tree` using npm.
 
 ```sh
 # NPM
-npm install @stanfordbdhg/react-sortable-tree --save
+npm install @StanfordBDHG/react-sortable-tree --save
 
 # YARN
-yarn add @stanfordbdhg/react-sortable-tree
+yarn add @StanfordBDHG/react-sortable-tree
 ```
 
 ES6 and CommonJS builds are available with each distribution.
@@ -38,28 +38,28 @@ For example:
 
 ```js
 // This only needs to be done once; probably during your application's bootstrapping process.
-import '@stanfordbdhg/react-sortable-tree/style.css';
+import '@StanfordBDHG/react-sortable-tree/style.css';
 
 // You can import the default tree with dnd context
-import SortableTree from '@stanfordbdhg/react-sortable-tree';
+import SortableTree from '@StanfordBDHG/react-sortable-tree';
 
 // Or you can import the tree without the dnd context as a named export. eg
-import { SortableTreeWithoutDndContext as SortableTree } from '@stanfordbdhg/react-sortable-tree';
+import { SortableTreeWithoutDndContext as SortableTree } from '@StanfordBDHG/react-sortable-tree';
 
 // Importing from cjs (default)
-import SortableTree from '@stanfordbdhg/react-sortable-tree/dist/index.cjs.js';
-import SortableTree from '@stanfordbdhg/react-sortable-tree';
+import SortableTree from '@StanfordBDHG/react-sortable-tree/dist/index.cjs.js';
+import SortableTree from '@StanfordBDHG/react-sortable-tree';
 
 // Importing from esm
-import SortableTree from '@stanfordbdhg/react-sortable-tree/dist/index.esm.js';
+import SortableTree from '@StanfordBDHG/react-sortable-tree/dist/index.esm.js';
 ```
 
 ## Usage
 
 ```jsx
 import React, { Component } from 'react';
-import SortableTree from '@stanfordbdhg/react-sortable-tree';
-import '@stanfordbdhg/react-sortable-tree/style.css'; // This only needs to be imported once in your app
+import SortableTree from '@StanfordBDHG/react-sortable-tree';
+import '@StanfordBDHG/react-sortable-tree/style.css'; // This only needs to be imported once in your app
 
 export default class Tree extends Component {
   constructor(props) {
@@ -154,7 +154,7 @@ Using the `theme` prop along with an imported theme module, you can easily overr
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                                            **File Explorer**                                                                             |                                                                             **Full Node Drag**                                                                             |                                                   **Minimalistic theme inspired from MATERIAL UI**                                                   |
 |                                                                 @nosferatu500/theme-file-explorer                                                                  |                                                                  react-sortable-tree-theme-full-node-drag                                                                  |                                                          react-sortable-tree-theme-minimal                                                           |
-| [Github](https://github.com/nosferatu500/theme-file-explorer) \| [NPM](https://www.npmjs.com/package/@stanfordbdhg/theme-file-explorer) | [Github](https://github.com/frontend-collective/react-sortable-tree-theme-full-node-drag) \| [NPM](https://www.npmjs.com/package/react-sortable-tree-theme-full-node-drag) | [Github](https://github.com/lifejuggler/react-sortable-tree-theme-minimal) \| [NPM](https://www.npmjs.com/package/react-sortable-tree-theme-minimal) |
+| [Github](https://github.com/nosferatu500/theme-file-explorer) \| [NPM](https://www.npmjs.com/package/@StanfordBDHG/theme-file-explorer) | [Github](https://github.com/frontend-collective/react-sortable-tree-theme-full-node-drag) \| [NPM](https://www.npmjs.com/package/react-sortable-tree-theme-full-node-drag) | [Github](https://github.com/lifejuggler/react-sortable-tree-theme-minimal) \| [NPM](https://www.npmjs.com/package/react-sortable-tree-theme-minimal) |
 
 ## Browser Compatibility
 
@@ -179,10 +179,10 @@ react-dnd only allows for one DragDropContext at a time (see: https://github.com
 
 ```js
 // before
-import SortableTree from '@stanfordbdhg/react-sortable-tree';
+import SortableTree from '@StanfordBDHG/react-sortable-tree';
 
 // after
-import { SortableTreeWithoutDndContext as SortableTree } from '@stanfordbdhg/react-sortable-tree';
+import { SortableTreeWithoutDndContext as SortableTree } from '@StanfordBDHG/react-sortable-tree';
 ```
 
 ## Credits

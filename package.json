@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stanfordbdhg/react-sortable-tree"
+    "url": "https://github.com/StanfordBDHG/react-sortable-tree"
   },
   "keywords": [
     "react",
